@@ -1,7 +1,7 @@
 // criamos uma constante com uma valor inicial
 const nome = 'Angelo Lustosa';
 
-// Imprimir o valor da varia´vel
+// Imprimir o valor da variável
 console.log(nome);
 
 // atualizar o valor 
