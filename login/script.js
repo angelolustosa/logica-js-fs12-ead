@@ -1,12 +1,22 @@
 console.log("login");
 
-function login(event) {
-  event.preventDefault();
+function login() {
+
+  const email = 'adm@adm.com'
+  const senha = 987654
 
   const emailInput = document.getElementById("email").value;
   const senhaInput = document.getElementById("senha").value;
 
-  console.log(emailInput);
-  console.log(senhaInput);
-  console.log("clicou no login", emailInput, senhaInput);
+  console.log(`Email: ${emailInput}, Senha: ${senhaInput}`);
+
+  if(emailInput == email && senhaInput == senha) {
+    console.log("Login bem-sucedido");
+
+    alert('Seja bem-vindo!')
+  } else {
+    console.log("Login falhou!");
+    alert('Usuário ou senha Inválida')  
+  }
+
 }
